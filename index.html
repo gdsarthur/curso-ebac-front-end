@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício M13</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .containerCarousel{
+            width: 800px;
+            margin-bottom: 32px;
+        }
+
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header {
+            background-color: rgb(238, 238, 238);
+            margin-bottom: 32px;
+        }
+
+        footer {
+            background-color: rgb(238, 238, 238);
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Exercício M13</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#carousel">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cards">Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rodape">Rodapé</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container containerCarousel">
+        <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_960_720.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Homem tocando banjo</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/01/14/06/09/woman-1139397_960_720.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Mulher tocando violão</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/06/30/09/29/monkey-3507317_960_720.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Macaco tocando guitarra</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="cards">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_960_720.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">O melhor fone do mundo</h4>
+                        <p class="card-text">
+                            Conheça um pouco mais sobre o melhor fone do mundo.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2014/11/26/15/20/saxophone-546303_960_720.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">O melhor saxofone do mundo</h4>
+                        <p class="card-text">
+                            Conheça um pouco mais sobre o melhor saxofone do mundo.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/10/21/05/mic-1132528_960_720.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">O melhor microfone do mundo</h4>
+                        <p class="card-text">
+                            Conheça um pouco mais sobre o melhor microfone do mundo.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center" id="rodape">
+            <h5>
+                Quer saber mais sobre música? Entre em contato!
+            </h5>
+        </div>
+    </footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
