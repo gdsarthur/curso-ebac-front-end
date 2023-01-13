@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: rgb(47, 94, 202);
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-style: italic;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+section {
+    display: flex;
+    padding: 32px 0;
+}
+
+section img {
+    height: 200px;
+}
+
+.containerSobre {
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid rgb(47, 94, 202);
+    margin-left: 32px;
+    color: rgb(47, 94, 202);
+    font-style: italic;
+}
+
+.containerDescSobre {
+    width: 100%;
+    margin-top: 50px;
+    color: black;
+}
+
+.container .produtos {
+    width: 100%;
+    color: rgb(47, 94, 202);
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background: rgb(47, 94, 202);
+    margin-top: 30px;
+}
+
+.listaProdutos {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 35px;
+}
+
+.listaProdutos img {
+    height: 150px;
+}
+
+.listaProdutos h3 {
+    padding: 16px 0;
+}
+
+button {
+    background-color: rgb(47, 94, 202);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 227px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+    header .container {
+        padding: 10px 32px;
+    }
+
+    .menu {
+        display: block;
+        margin-right: 50px;
+    }
+
+    .container {
+        padding: 32px;
+    }
+
+    .container img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    section {
+        display: block;
+    }
+
+    .containerSobre {
+        margin: 0;
+    }
+
+    .produtos {
+        margin-top: 225px;
+
+    }
+
+    .listaProdutos {
+        display: block;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1179px) {
+    .container {
+        width: 90%;
+    }
+
+    .listaProdutos {
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 7%;
+        row-gap: 5%;
+    }
+
+    button {
+        width: 335px;
+    }
+
+}
